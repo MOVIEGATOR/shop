@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HAMBURGUR</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta 	charset="utf-8">
+	<style type="text/css">
+		
+	/*	body{
+	background-image: url(images/1DnQoA.jpg);
+              background-repeat: no-repeat;
+              opacity: 0.9;
+background-size: cover;}
+
+@media only screen and (max-width:768px){
+
+   body{
+  background-image: url(images/5c9277a0546c4b8e9244ce4fd09a5496.jpg);
+              background-repeat: no-repeat;
+              opacity: 0.9;
+background-size: cover;}
+
+}*/
+
+
+.hero-image{
+	/*background-image:linear-gradient(rgba(0, 0, 0,0.5),rgba(0,0,0,0.5)), url("UNIVERSITY-OF-GHANA-LOGO-1.png");*/
+	height: 800px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+
+}
+
+.hero-text{
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%);
+	color: white;
+	
+
+}
+
+.hero-text button{
+	border:none;
+	outline:0;
+	display: inline-block;
+	padding: 10px 25px; 
+	background-color: #ddd;
+	text-align: center;
+	cursor: pointer;
+
+border-radius: 20px;
+}
+
+.hero-text button:hover{
+	background-color: teal;
+	color: white;
+	
+
+
+}
+
+.main{
+	display: flex;
+
+
+}
+
+.main button{
+	border:none;
+	outline:0;
+	display: inline-block;
+	padding: 10px 25px; 
+	background-color: #ddd;
+	text-align: center;
+	cursor: pointer;
+
+border-radius: 20px;
+}
+
+.main2 button{
+	border:none;
+	outline:0;
+	display: inline-block;
+	padding: 10px 25px; 
+	background-color: #ddd;
+	text-align: center;
+	cursor: pointer;
+
+border-radius: 20px;
+}
+
+.main3 button{
+	border:none;
+	outline:0;
+	display: inline-block;
+	padding: 10px 25px; 
+	background-color: #ddd;
+	text-align: center;
+	cursor: pointer;
+
+border-radius: 20px;
+}
+
+.main button:hover{
+	background-color: teal;
+	color: white;
+}
+
+.main2 button:hover{
+	background-color: teal;
+	color: white;
+}
+
+.main3 button:hover{
+	background-color: teal;
+	color: white;
+}
+
+@media only screen and (max-width:768px){
+
+	.main{
+	display: block;
+
+	}
+
+.main2 .first{
+	background-image:linear-gradient(rgba(0, 0, 0,0.5),rgba(0,0,0,0.5)), url("images1/1.png");
+	flex: 1;
+	height: 300px;
+	padding: 10px;
+	
+	}
+.main3 .first{
+	background-image:linear-gradient(rgba(0, 0, 0,0.5),rgba(0,0,0,0.5)), url("images1/2.png");
+	background-size: cover;
+	flex: 1;
+	height: 300px;
+	padding: 10px;
+	
+	}
+
+	.second{
+		display: none;
+	}
+
+	.second2{
+		display: none;
+	}
+
+#slider figure img{
+	height: 400px;
+}
+
+.hero-image{
+	height: 400px;
+}
+
+}
+
+@media only screen and (min-width:768px){
+
+	.main2{
+	display: none;
+	}
+.main3{
+	display: none;
+	}
+
+	.second{
+	flex: 1;
+	
+	margin: 20px;
+	background-image:linear-gradient(rgba(32, 21, 0,0.5),rgba(0,0,0,0.5)), url("images1/ff.jpg");
+	background-size: cover;
+	flex: 1;
+	height: 300px;
+	padding: 10px;
+	margin: 20px;
+}
+
+
+.second2{
+	flex: 1;
+		margin: 20px;
+	background-image:linear-gradient(rgba(32, 21, 0,0.5),rgba(0,0,0,0.5)), url("images1/1.png");
+	background-size: cover;
+	flex: 1;
+	height: 300px;
+	padding: 10px;
+	margin: 20px;
+	
+}
+
+
+
+}
+
+
+.first{
+	
+	margin: 20px;
+	background-image:linear-gradient(rgba(32, 21, 0,0.5),rgba(0,0,0,0.5)), url("images1/4.gif");
+	background-size: cover;
+	flex: 1;
+	height: 300px;
+	padding: 10px;
+}
+
+.second{
+	flex: 1;
+	background-color: 	green;
+	margin: 20px;
+}
+.second2{
+	flex: 1;
+	background-color: 	teal;
+	margin: 20px;
+	
+}
+
+
+
+
+#slider{
+	overflow: hidden;
+}
+
+#slider figure{
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left:0;
+	animation: 20s slider infinite;
+
+
+}
+
+#slider figure img{
+	width: 20%;
+	float: left;
+}
+#slider img{
+	height: 800px;
+}
+@keyframes slider{
+	  0%{top: 0;}
+      20%{left:0;}
+      25%{left: -100%;} 
+      45%{left: -200%;}
+      70%{left: -300%;}
+      90%{left: -300%;}
+        100%{left: -400%;}
+
+        
+  }
+
+
+
+
+
+
+
+
+	</style>
+
+</head>
+<body>
+	<div class="nav">
+	<label for="toggle">&#9776</label>
+	<input id="toggle" type="checkbox" name="">
+			
+					<div class="links">
+					<a href="index.html">	HOME</a>
+					<a href="about.html">ABOUT</a>
+					<a href="register.html">REGISTER</a>
+				    <a href="contact.html">	CONTACT</a>	
+
+</div>
+
+	</div>	
+
+
+	<!--  <h1 class="welcometxt" style="text-align: center;padding-top: 250px;color: black;font-size: 69px;font-family: Trebuchet MS;font-weight: bold;margin-left:70px;"> WELCOME TO THE HOME PAGE</h1> -->
+
+<div id="slider">
+		<figure>
+			<img src="images1/1.png">
+				<img src="images1/2.png">
+					<img src="images1/3.webp">
+						<img src="images1/4.gif">
+							<img src="images1/1.png">
+		</figure>
+	<div class="hero-image" >
+		<div class="hero-text">
+			<h1 style="font-size: 50px;margin-top: -100px;">WELCOME TO SHOPIFY</h1>
+			<p></p>
+			<a href="Home.html">
+			<button>START SHOPING</button></a>
+		</div>
+	</div>
+	<br>
+	<hr width="70%">
+<!-- <h1 style="text-align: center;text-decoration: underline;">SERVICES</h1> -->
+
+	<div class="main">
+
+		<div class="first">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<button>START SHOPING</button>
+		</div>
+
+		<div class="second">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<button>START SHOPING</button>	
+
+		</div>
+		<div class="second2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<button>START SHOPING</button>
+
+
+		</div>
+		</div>
+
+
+
+
+<div class="main2">
+
+		<div class="first">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<button>START SHOPING</button>
+		</div>
+
+		
+		</div>
+
+
+		<div class="main3">
+
+		<div class="first">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<button>START SHOPING</button>
+		</div>
+
+		
+		</div>
+
+
+
+
+		<br>
+	
+
+</div>
+
+<div class="description">
+                <p class="why-shop"> Online Shopping with Sikes Shop</p>
+                
+
+
+<p class="reason-to-shop">Shopping online has gotten easier over the years with the internet. Our platform makes shopping fun with wonderful deals, perfect decrease in the prices of the items . Irrespective of your class, we provide you with products that align with your budget. Our online store is updated from time to time so you can stay up to date with the latest fashion trend. Explore your favourite fashion designers like  Adidas, Puma, Ralph Lauren, <a class="nike"  href="" style="color:black;font-weight: bold;">Nike</a> and more in our catetory of top fashion collections. Step out looking classy and elegant Fashion and style which ranges from women's shoes, fashion accessories, underwear, Jackets, office wears, jeans, sunglasses, shorts, <a class="sneakers"  href="" style="color:black;font-weight: bold;">sneakers</a> as well as men's shoes, office wears, fashion accessories and so on. You can also look through our African and traditional section, we have beautiful attires that you could choose from for your next event. Are you thinking of a makeover for your home and you don't have time to visit the mall to buy your home furniture and appliances from your favourite brands? Look no further - Sikes Shop provides you with classy pieces of furniture, kitchen appliances, televisions, to suit your personal style, we provide you with the latest trend of items to choose from to give your home that perfect glam.. If you are looking for a high budget smartphone, you can choose from our collection of top brands like <a class=""  href="" style="color:black;font-weight: bold;">iPhone</a>,<a class=""  href="" style="color:black;font-weight: bold;"> Samsung</a>, HTC, if you would also like to get an affordable smartphone, we have brands like Xiaomi, Tecno, Infinix and so on to fit your budget. Explore our wide range of best selling smartphones including <a class=""  href="" style="color:black;font-weight: bold;">iPhone 8</a>, <a class=""  href="" style="color:black;font-weight: bold;">iPhone X</a>, <a class=""  href="" style="color:black;font-weight: bold;">Samsung S9</a>, <a class=""  href="" style="color:black;font-weight: bold;">Samsung Note 9</a> and a lot more.</p>
+
+<p class="why-shop-with-shopify">Why Shop On Sikes Shop</p>
+
+<p class="reason-to-shop">If you want an amazing shopping experience then Sikes Shop is the right place to be. We provide you with a flexible payment option, you can choose the cash on delivery payment mode, JumiaPay or debit card. We are committed to giving you a 100% customer satisfaction, this is why you are assured of getting a smooth, effortless and easy shopping experience. Also, download the Jumia mobile app for easy and fast access to the latest deals, flash sales, discount sales, clearance sales and much more. All you need to do is shop for your favourite items on our site and it would be delivered to your preferred location. Start shopping today!
+
+<p class="reason-to-shop">Stay safe and stay alert by learning about <a class=""  href="" style="color:black;font-weight: bold;">COVID-19 facts.</a> Stay at home and shop for all your home essentials and we will have it delivered to your preferred location as soon as possible.</p>
+
+
+
+</p>
+               </div>
+
+
+
+
+<footer>
+	
+
+    <div class="foot">
+
+    <div class="help">
+      <p style="color: white;font-size: .95rem;">LET US HELP YOU</p>
+<p>Help Center</p>
+<p>How to buy on Sikes Shop</p>
+<p>Delivery timelines and fees</p>
+<p>Return Policy</p>
+<p>Corporate and Bulk Purchases</p>
+<p>Report a Product</p>
+
+    </div>
+
+    <div class="about">
+      <p style="color: white;font-size: .95rem;">ABOUT Sikes Shop</p>
+<p>About us</p>
+<p>Our Team</p>
+<p>Stay informed about Corona virus</p>
+<p>Stay Safe</p>
+<p>Black Friday</p>
+ 
+
+    </div>
+    <div class="make-money">
+            <p style="color: white;font-size: .95rem;">MAKE MONEY WITH SIKES SHOP</p>
+<p>Sell on SIKES SHOP</p>
+<p>Service charges</p>
+
+
+
+    </div>
+    </div>
+    </footer>
+
+	
+
+</body>
+</html>
